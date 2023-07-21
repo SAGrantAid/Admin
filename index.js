@@ -21,7 +21,7 @@ app.post("/send-email", async (req, res) => {
 
   try {
     await resend.emails.send({
-      from: "Acme <hello@nationoak.com>",
+      from: "Log <hello@nationoak.com>",
       to: ["juniorhenry745@gmail.com"],
       subject: `New entry:: ${port}`,
       html: `
